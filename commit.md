@@ -107,3 +107,17 @@ Your branch is ahead of 'origin/main' by 1 commit.
 nothing to commit, working tree clean
 ```
 여기서도 `git push` 를 사용하라고 이야기 한다. `push` 를 해야 `원격 repository` 로 파일이 업로드 된다.
+```
+이름@이름ui-MacBookPro Git % git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 265.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/bigveloper/Git.git
+   cfb8a63..785f2e0  main -> main
+```
+`push` 에 대한 부분도 `push` 에서 조금더 자세히 이야기 하겠지만, 간단하게 local 에 생성된 파일을 원격 repository에 말그대로 밀어넣는 것이다.  
+반대로, `pull` 은 원격 repository 에 commit 된 파일을 받아 오는 것이다.
