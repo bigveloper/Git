@@ -5,7 +5,7 @@
  - github 도 `main` 을 선택했다고 한다. 
  - 그러나 project 에서 `branch` 의 이름을 꼭 `main` 이나 `master` 로 지정지 않을 수 있고, project 에 맞는 이름으로 지정해 줄 수도 있다.
 
-## git bracn create
+## git branch 
 - 명령어 : `git branch branchName`
 - 먼저 `status` 를 사용하여 git repository 내부 상황을 살펴본다.(branch 확인)
 ```
