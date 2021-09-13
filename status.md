@@ -1,4 +1,4 @@
-## status
+# status
  - git status 를 입력하면
  ```
 이름@이름ui-MacBookPro FrontEnd_Basic % git status

@@ -1,4 +1,4 @@
-## pull
+# pull
  - 원격 저장소(github) 의 `repository` 의 내용을 가져와서(fetch) local repository(working Directory) 에 합친다.(merge)
  - git pull 명령어를 사용하여 받는다.
  ```
