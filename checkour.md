@@ -1,7 +1,10 @@
 # checkout
  - branch 에서 설명을 너무 열심히 하다보니 이미 해버렸다.  
+ - 현재 `branch` 는 두개 생성 되어 있다. `branch` name 은  
+   `main` 과 `Git_1.0`이다. 기본으로 `main` 이 지정되어 있다.   
    
-   
+     
+     
 - 명령어 :  
 `1. git checkout branchName`  
 `2. git checkout -b branchName`
