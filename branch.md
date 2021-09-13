@@ -21,8 +21,8 @@ nothing to commit, working tree clean
 
 ## repository 의 branch 확인
 - 명령어 : 
-1. git branch 
-2. git branch -v
+`1. git branch`  
+`2. git branch -v`
 ```
 이름@이름ui-MacBookPro Git % git branch
   Git_1.0
@@ -39,7 +39,9 @@ main(=master) branch 앞에 * 이 있다.
 그럼 이제 Git_1.0 branch 로 이동 해 보자  
 
 ## branch 이동
-- 명령어 : git checkout branchName
+- 명령어 :  
+`1. git checkout branchName`  
+`2. git checkout -b branchName`
 ```
 이름@이름ui-MacBookPro Git % git checkout Git_1.0
 Switched to branch 'Git_1.0'
@@ -51,7 +53,19 @@ branch 가 `Git_1.0` 로 바뀐것을 확인해 볼수 있다.
 * Git_1.0
   main
 ```
-`Git_1.0` 의 앞에 * 이 있으므로 선택 되어 있는 것을 확인 할 수 있다.
+`Git_1.0` 의 앞에 * 이 있으므로 선택 되어 있는 것을 확인 할 수 있다.  
+branch 를 생성하면서 바로 이동하는 명령어가 바로 `2. git checkout -b branchName` 이다.  
+아래 내용에서 살펴보자
+```
+이름@이름ui-MacBookPro Git % git checkout -b Git_1.1
+Switched to a new branch 'Git_1.1'
+
+이름@이름ui-MacBookPro Git % git branch 
+  Git_1.0
+* Git_1.1
+  main
+```
+`checkout -b` 를 사용하니 brach 가 생성 되면서 바로 생성된 brach 를 지정하는것을 확인 했다.  
 
 ## branch 삭제 하기
 - 명령어 : git branch -d branchName
@@ -87,3 +101,49 @@ Deleted branch Git_1.0 (was d3d0f90).
 `Git_1.0` 은 삭제 되었고 `main`만 남았다.
 
 ## 생성한 branch 를 원격 repository 에 push 하기
+명령어 : git push --set-upstream origin branchName
+원격 repository 로 보낼 때는 `push` 를 사용하니까 해보자
+```
+이름@이름ui-MacBookPro Git % git push             
+fatal: The current branch Git_1.0 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Git_1.0
+```
+아.. 안돼.. `git push --set-upstream origin Git_1.0` 이렇게 작성 하라고 한다. 
+- 현재 원격 repository 에는 main branch 밖에 없고, 다른 branch 가 바로 push 되면 에러가 발생되는 것이다. 그래서  --set-upstream 옵션을 주는 것이다.
+```
+이름@이름ui-MacBookPro Git % git push --set-upstream origin Git_1.0
+Password for 'https://bigvieloper@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/bigveloper/Git.git/'
+whyj@WhyJui-MacBookPro Git % git push --set-upstream origin Git_1.0
+Password for 'https://bigvieloper@github.com': 
+Enumerating objects: 63, done.
+Counting objects: 100% (63/63), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (63/63), 17.72 KiB | 4.43 MiB/s, done.
+Total 63 (delta 23), reused 5 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (23/23), done.
+remote: 
+remote: Create a pull request for 'Git_1.0' on GitHub by visiting:
+remote:      https://github.com/bigveloper/Git/pull/new/Git_1.0
+remote: 
+To https://github.com/bigveloper/Git.git
+ * [new branch]      Git_1.0 -> Git_1.0
+Branch 'Git_1.0' set up to track remote branch 'Git_1.0' from 'origin'.
+```
+에러는 없군, 그럼 잘 생성되었나 확인해 본다.
+```
+이름@이름ui-MacBookPro Git % git branch -r
+  origin/Git_1.0
+  origin/HEAD -> origin/main
+  origin/main
+```
+`git branch -r` 은 참고로 원격 repository 의 branch 를 확인하는 명령어 이다. local 에서는 그냥 `git branch` 를 사용 하듯 말이다.
+내용을 보니 잘 생성 된 것으로 확인 된다.
+
+## 마무리
+- branch 를 생성, 이동, 삭제 까지 할 수 있다.
+
