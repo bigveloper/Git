@@ -38,7 +38,7 @@ main(=master) branch 앞에 * 이 있다.
 현재는 main 으로 branch 가 지정되어 있다.  
 그럼 이제 Git_1.0 branch 로 이동 해 보자  
 
-## branch 이동
+## branch 이동 = checkout
 - 명령어 :  
 `1. git checkout branchName`  
 `2. git checkout -b branchName`
