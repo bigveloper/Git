@@ -42,7 +42,7 @@ Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
 
 nothing to commit, working tree clean
 ```
-  merge 명령ㅇ :
+  merge 명령어 :
 `git merge FETCH_HEAD`
 ```
 name@nameui-MacBookPro Git % git merge FETCH_HEAD
