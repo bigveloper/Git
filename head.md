@@ -38,5 +38,5 @@ commit d3d0f90445f9b0a4ce3397d2abead6f43ff39d15 (HEAD -> Git_1.0, origin/Git_1.0
 `HEAD` 가 `Git_1.0` 이라는 `branch` 를 가리키고 있다.  
 
 ## 정리
-- 일단 이렇게 `HEAD` 가 어떻게 branch 를 가리키는 지 확인 해보았다.
-- `HEAD` 
+- 일단 이렇게 `HEAD` 가 어떻게 `branch` 를 가리키는 지 확인 해보았다.
+- `HEAD` 는 최근 작업한 `commit` 을 혹은 작업한(하는) `branch` 를 가리킨다.
