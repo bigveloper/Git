@@ -9,7 +9,7 @@
 commit 을 하나의 patch 파일로 만들 수 있고, 이를 `Commitor`에게 전달하면 내용을 검토하고 Main Stream 소스코드를 반영 할 수 있다.  
 
 - patch 만들기
-  - 특정 commit ID 를 지정하여 만들 수 있다.
+  - 특정 commit ID 를 지정하여 만들 수 있다.  
   `git format-patch {commit ID}`
   - HEAD 로 부터 시작하여, 몇개의 commit 을 patch 로 만들고자 한다면, commit ID 대신 이렇게 만들 수 있다.  
    `git format-patch -{patch를 생성할 commit 수}`
