@@ -40,7 +40,18 @@ Deleted tag 'v1.0.1' (was d65918b)
 name@nameui-MacBookPro Git % git tag
 v1.0
 ```
-
-
+## 4. tag 원격 repository 에 올리기
+```
+name@nameui-MacBookPro Git % git push origin v1.0
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bigveloper/Git.git
+ * [new tag]         v1.0 -> v1.0
+```
+## 5. 원격 repository 에 올린 tag 삭제하기
+```
+name@nameui-MacBookPro Git % git push origin :v1.0
+To https://github.com/bigveloper/Git.git
+ - [deleted]         v1.0
+```
 
 
