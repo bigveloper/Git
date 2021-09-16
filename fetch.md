@@ -10,16 +10,16 @@
 명령어 : `git fetch origin main`
 먼저는 원격 repository 에서 뭔가 변화를 주어야 `fetch` 또는 `pull` 할게 있겠다.
 항상 `status` 를 통해 repository 의 상태를 먼저 살펴본다.
-```
-이름@이름ui-MacBookPro Git % git status
+```sh
+Git % git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 ```
 음, 일단 `fetch` 해보자..
-```
-이름@이름ui-MacBookPro Git % git fetch origin main
+```sh
+Git % git fetch origin main
 remote: Enumerating objects: 8, done.
 remote: Counting objects: 100% (8/8), done.
 remote: Compressing objects: 100% (6/6), done.
@@ -34,8 +34,8 @@ From https://github.com/bigveloper/Git
 그럼 `merge` 된 것이 아닌 어떠한 변화가 있는 파일들이 새로운 `branch` 에 반영 되었다.  
 그럼 병합을 해볼텐데, `pull` 을 사용해도 되고, `merge` 를 사용해도 되는데, `merge` 를 사용해 보자.  
 그전에 `status` 를 통해 상태를 확인 해 주고,  
-```
-이름@이름ui-MacBookPro Git % git status
+```sh
+Git % git status
 On branch main
 Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
@@ -44,8 +44,8 @@ nothing to commit, working tree clean
 ```
   merge 명령어 :
 `git merge FETCH_HEAD`
-```
-name@nameui-MacBookPro Git % git merge FETCH_HEAD
+```sh
+Git % git merge FETCH_HEAD
 Updating 6852bb2..d411cf4
 Fast-forward
  fetch.md | 14 +++++++++++++-
@@ -53,8 +53,8 @@ Fast-forward
 ```
  `pull` 이랑 같은 모습
  그럼 `status`  
-```
-name@nameui-MacBookPro Git % git status
+```sh
+Git % git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
