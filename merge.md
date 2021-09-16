@@ -1,5 +1,5 @@
 # merge
-명령어 : `git merge 
+명령어 : `git merge` 
 - `merge` 는 `병합` 을 뜻한다.  
 - `fetch` 에서 사용 해 보았지만 다시 한번 설명 한다.  
 - `pull` 을 받게 되면 기본적으로 `merge` 도 실행 된다.  
