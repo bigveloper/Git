@@ -4,15 +4,15 @@
 
 `clone` 을 사용하기 위해서는 먼저 원격 repository 가 있어야 한다.  
   
-```
-이름@이름ui-MacBookPro FrontEnd % git clone https://github.com/bigveloper/react_basic.git
+```sh
+FrontEnd % git clone https://github.com/bigveloper/react_basic.git
 Cloning into 'react_basic'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
-이름@이름ui-MacBookPro FrontEnd % cd react_basic
-이름@이름ui-MacBookPro react_basic % ls -al
+FrontEnd % cd react_basic
+react_basic % ls -al
 total 8
 drwxr-xr-x   4 이름  staff  128 Sep 14 00:46 .
 drwxr-xr-x  11 이름  staff  352 Sep 14 00:46 ..
@@ -24,14 +24,14 @@ FrontEnd 디렉토리(폴더)에 원격 repository 중 하나인 react_basic 을
 또 한가지,
 `git clone https://github.com/bigveloper/react_basic.git basic_react`  
 이런식으로 끝에 디렉토리(폴더) 이름을 정해준다면 정해진 이름으로 생성 한다.
-```
-이름@이름ui-MacBookPro FrontEnd % git clone https://github.com/bigveloper/react_basic.git basic_react
+```sh
+FrontEnd % git clone https://github.com/bigveloper/react_basic.git basic_react
 Cloning into 'basic_react'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
-이름@이름ui-MacBookPro FrontEnd % ls -al
+FrontEnd % ls -al
 total 931096
 drwxr-xr-x  12 이름  staff        384 Sep 14 00:52 .
 drwx------+  5 이름  staff        160 Sep 12 03:50 ..
@@ -45,8 +45,8 @@ drwxr-xr-x  10 이름  staff        320 Sep 12 22:41 React
 drwxr-xr-x   3 이름  staff         96 Aug 29 22:33 Vue
 drwxr-xr-x   4 이름  staff        128 Sep 14 00:52 basic_react
 drwxr-xr-x   4 이름  staff        128 Sep 14 00:46 react_basic
-이름@이름ui-MacBookPro FrontEnd % cd basic_react
-이름@이름ui-MacBookPro basic_react % ls -al
+FrontEnd % cd basic_react
+basic_react % ls -al
 total 8
 drwxr-xr-x   4 이름  staff  128 Sep 14 00:52 .
 drwxr-xr-x  12 이름  staff  384 Sep 14 00:52 ..
