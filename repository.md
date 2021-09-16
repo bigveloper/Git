@@ -5,11 +5,11 @@ repository 는 크게 두곳으로 나누어 볼 수 있다.
 - 원격 repository (github, gitlab 등등)  
 원격은 원격에서 만들면 되고 local 로 clone 을 해주어도 된다.  
 local 에서는 해당 폴더에 `git init` 이라는 명령어를 통해 `git repository` 를 만들 수 있다.  
-```
-name@nameui-MacBookPro ~ % cd Documents
-name@nameui-MacBookPro Documents % cd FrontEnd
-name@nameui-MacBookPro FrontEnd % mkdir FE
-name@nameui-MacBookPro FrontEnd % ls -al
+```sh
+~ % cd Documents
+Documents % cd FrontEnd
+FrontEnd % mkdir FE
+FrontEnd % ls -al
 total 931096
 drwxr-xr-x  13 name  staff        416 Sep 15 01:09 .
 drwx------+  5 name  staff        160 Sep 12 03:50 ..
@@ -25,13 +25,13 @@ drwxr-xr-x   3 name  staff         96 Aug 29 22:33 Vue
 drwxr-xr-x   4 name  staff        128 Sep 14 00:52 basic_react
 drwxr-xr-x   4 name  staff        128 Sep 14 00:46 react_basic
 
-name@nameui-MacBookPro FrontEnd % cd FE
-name@nameui-MacBookPro FE % ls -al
+FrontEnd % cd FE
+FE % ls -al
 total 0
 drwxr-xr-x   2 whyj  staff   64 Sep 15 01:09 .
 drwxr-xr-x  13 whyj  staff  416 Sep 15 01:09 ..
 
-name@nameui-MacBookPro FE % git init
+FE % git init
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
@@ -44,7 +44,7 @@ hint:
 hint: 	git branch -m <name>
 Initialized empty Git repository in /Users/whyj/Documents/FrontEnd/FE/.git/
 
-name@nameui-MacBookPro FE % ls -al
+FE % ls -al
 total 0
 drwxr-xr-x   3 whyj  staff   96 Sep 15 01:09 .
 drwxr-xr-x  13 whyj  staff  416 Sep 15 01:09 ..
