@@ -7,24 +7,24 @@ git repository 의 소스 버전을 표시하기 위해서는 commit 메세지 �
 
 ## 1. Lightweight tag
 `git tag TagName` 으로 붙일 수 있다.
-```
-name@nameui-MacBookPro Git % git tag v1.0
+```sh
+Git % git tag v1.0
 
-name@nameui-MacBookPro Git % git tag
+Git % git tag
 v1.0
 
 ```  
   
 ## 2. Annotated tag
 `-a` 옵션을 사용한다.
-```
-name@nameui-MacBookPro Git % git tag -a v1.0.1 -m"Release version 1.0.1"
+```sh
+Git % git tag -a v1.0.1 -m"Release version 1.0.1"
 
-name@Wnameui-MacBookPro Git % git tag
+Git % git tag
 v1.0
 v1.0.1
 
-name@nameui-MacBookPro Git % git show v1.0.1
+Git % git show v1.0.1
 tag v1.0.1
 Tagger: bigveloper <bigveloper@gmail.com>
 Date:   Wed Sep 15 02:22:29 2021 +0900
@@ -33,23 +33,23 @@ Release version 1.0.1
 // 이하 내용 생략
 ```
 ## 3. tag 삭제하기
-```
-name@nameui-MacBookPro Git % git tag -d v1.0.1
+```sh
+Git % git tag -d v1.0.1
 Deleted tag 'v1.0.1' (was d65918b)
 
-name@nameui-MacBookPro Git % git tag
+Git % git tag
 v1.0
 ```
 ## 4. tag 원격 repository 에 올리기
-```
-name@nameui-MacBookPro Git % git push origin v1.0
+```sh
+Git % git push origin v1.0
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/bigveloper/Git.git
  * [new tag]         v1.0 -> v1.0
 ```
 ## 5. 원격 repository 에 올린 tag 삭제하기
-```
-name@nameui-MacBookPro Git % git push origin :v1.0
+```sh
+Git % git push origin :v1.0
 To https://github.com/bigveloper/Git.git
  - [deleted]         v1.0
 ```
