@@ -4,8 +4,8 @@
 
 다시, `commit` 부터 해보자
 
-```
-name@Wnameui-MacBookPro Git % ls -al
+```sh
+Git % ls -al
 total 168
 drwxr-xr-x  21 name  staff   672 Sep 15 00:07 .
 drwxr-xr-x  12 name  staff   384 Sep 14 00:52 ..
@@ -30,8 +30,8 @@ drwxr-xr-x  14 name  staff   448 Sep 15 00:12 .git
 -rw-r--r--   1 name  staff     7 Sep 13 21:54 tag.md
 ```
 여기다 `test.md` 파일을 만든 후 `push` 까지 할 것이다.
-```
-name@Wnameui-MacBookPro Git % ls -al
+```sh
+Git % ls -al
 total 168
 drwxr-xr-x  21 name  staff   672 Sep 15 00:07 .
 drwxr-xr-x  12 name  staff   384 Sep 14 00:52 ..
@@ -60,9 +60,9 @@ drwxr-xr-x  14 name  staff   448 Sep 15 00:12 .git
 `test.md` 파일을 만들었다.
 그럼 commit 전에 `add .` 를 해준다.
 뭔가 변화가 있을때는 `status` 로 확인
-```
-name@nameui-MacBookPro Git % git add .
-name@nameui-MacBookPro Git % git status
+```sh
+Git % git add .
+Git % git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -71,15 +71,15 @@ Changes to be committed:
 	new file:   test.md
 ```
 그럼 이제 `commit` 을 해줄 단계
-```
-name@nameui-MacBookPro Git % git commit -m "add test.md" 
+```sh
+Git % git commit -m "add test.md" 
 [main c2a2139] add test.md
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test.md
 ```
 `commit` 이 되었고, 이제야 드디어 `push` 를 해줄 차례
-```
-name@nameui-MacBookPro Git % git push origin main
+```sh
+Git % git push origin main
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
 Delta compression using up to 8 threads
@@ -93,8 +93,8 @@ To https://github.com/bigveloper/Git.git
 사실 여기서 error 가 났었다. 이유는 내가 `원격 repository` 에서 작성 내용들을 `commit` 했고,
 `local repository` 와 일치 가 된 뒤에 `commit` 을 했어야 했는데, 안되어서 error 가 발생되었었다.
 여기서 하나 배운다. `commit` 전에 `pull` 받고 `commit` 하고 `push` 하자.
-```
-name@nameui-MacBookPro Git % git status
+```sh
+Git % git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
