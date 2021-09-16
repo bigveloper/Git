@@ -1,14 +1,14 @@
 # status
  - git status 를 입력하면
- ```
-이름@이름ui-MacBookPro FrontEnd_Basic % git status
+ ```sh
+FrontEnd_Basic % git status
 On branch main
 Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 
 nothing to commit, working tree clean
 
-이름@이름ui-MacBookPro FrontEnd_Basic % git status
+FrontEnd_Basic % git status
 On branch main
 Your branch is behind 'origin/main' by 7 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
