@@ -28,7 +28,7 @@
  - `git config --global user.name "bigveloper"` 계정명은 아무이름이나 주어도 되지만, github 이름을 주는 것이 기억하기 좋겠다.
  - `git config --global user.eamil "bigveloper@gmail.com"` 이메일도 github 에 등록된 이메일 주소를 입력해 준다.
  - `git config --list`라고 검색해 보면
-```
+```sh
 credential.helper=osxkeychain
 core.excludesfile=/Users/이름/.gitignore_global
 difftool.sourcetree.cmd=opendiff "$LOCAL" "$REMOTE"
@@ -49,8 +49,8 @@ core.precomposeunicode=true
 
  - 원하는 곳에 폴더를 만든다. `cd 폴더명` 으로 이동하여 그곳에 `mkdir 폴더명` 으로 폴더를 생성한다.
  - 폴더 안에서 git 명령어인 `git init` 을 입력하면 그곳이 git 저장소`repository` 가 된다.
-```
-이름@이름ui-MacBookPro FrontEnd_Basic % ls -al
+```sh
+FrontEnd_Basic % ls -al
 total 8
 drwxr-xr-x   5 이름  staff  160 Sep 12 23:06 .
 drwxr-xr-x   9 이름  staff  288 Sep 12 23:02 ..
